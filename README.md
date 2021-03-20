@@ -10,3 +10,13 @@
 **A:** The linear model is a good indicator of effectiveness because the r-squared value tells us that about 71% of predictions will be correct using this linear model.
 
 ![Image of results in R console Del 1](https://github.com/jlozano1990/MechaCar_Statistical_Analysis/blob/main/Images/Deliverable_1_Results.PNG)
+
+## Summary Statistics on Suspension Coils
+**Q:** The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+**A:** When it comes to the total summarym the current manufacturing data meets the design specification. The data from all lots averages to a variance of about 62 pounds per square inch, putting it below the requirement of 100 pounds per square inch.
+
+![PSI total summary](https://github.com/jlozano1990/MechaCar_Statistical_Analysis/blob/main/Images/PSI_total_summary.PNG)
+
+However, when we look at the variances by lot, we can see that lot 3 is not meeting design specifications. The manufacturing data shows that they exceed the variance of 100 pounds per square inch by about 70 pounds per square inch.
+
+![Psi summary by lot](https://github.com/jlozano1990/MechaCar_Statistical_Analysis/blob/main/Images/PSI_summary_by_LOT.PNG)
