@@ -6,6 +6,7 @@ output: html_notebook
 
 ```{r}
 library(tidyverse)
+library(dplyr)
 ```
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
 
@@ -22,5 +23,16 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AW
 ```
 ```{r}
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=mechacar_MPG_table))
+```
+```{r}
+suspension_coil_table <- read.csv(file='Suspension_Coil.csv', check.names=F,stringsAsFactors = F)
+```
+
+```{r}
+total_summary <- suspension_coil_table %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
+```
+
+```{r}
+lot_summary <- suspension_coil_table %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
 ```
 
