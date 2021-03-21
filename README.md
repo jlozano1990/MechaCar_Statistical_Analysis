@@ -20,3 +20,10 @@
 However, when we look at the variances by lot, we can see that lot 3 is not meeting design specifications. The manufacturing data shows that they exceed the variance of 100 pounds per square inch by about 70 pounds per square inch.
 
 ![Psi summary by lot](https://github.com/jlozano1990/MechaCar_Statistical_Analysis/blob/main/Images/PSI_summary_by_LOT.PNG)
+
+## T-Tests on Suspension Coils
+We did a T-Test on our the PSI of suspension coils across all lots to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch. The p-value result was 0.06028, meaning that the PSI of suspension coils across all manufacturing lots was not statistically different from the population mean of 1,500 pounds per inch.
+![T-test on whole datatset](https://github.com/jlozano1990/MechaCar_Statistical_Analysis/blob/main/Images/total_T_test.PNG)
+
+We then proceeded to do a T-Test on the PSI of suspension coils but this time we organized it by manufacturing lot. For lot 1 and lot 2, the p-values were 1 and 0.6072 respectively, meanning that the PSI of suspension coils from those manufacturing lots were not statistically different from the population mean of 1,500 pounds per inch. The p-value result for lot 3 was 0.04168, meaning that the PSI of suspension coils from this manufacturing lot was statistically different from the population mean of 1,500 pounds per inch.
+![T-test subset by lots](https://github.com/jlozano1990/MechaCar_Statistical_Analysis/blob/main/Images/t_test_subset_by_lots.PNG)
