@@ -18,3 +18,11 @@ total_summary <- suspension_coil_table %>% summarize(Mean=mean(PSI),Median=media
 
 #Suspension Coil PSI summary grouped by Manufacturing Lot
 lot_summary <- suspension_coil_table %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
+
+#T-test to determine if PSI across all lots is statistically different from population mean of 1500 lbs per sq in
+t.test(suspension_coil_table$PSI, mu=1500)
+
+#T-test to determing if PSI by manufacturing lot is statistically different from population mean of 1500 lbs per sq in
+t.test(subset(suspension_coil_table, Manufacturing_Lot == "Lot1")$PSI, mu = 1500)
+t.test(subset(suspension_coil_table, Manufacturing_Lot == "Lot2")$PSI, mu = 1500)
+t.test(subset(suspension_coil_table, Manufacturing_Lot == "Lot3")$PSI, mu = 1500)
