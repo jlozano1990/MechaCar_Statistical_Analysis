@@ -17,7 +17,7 @@
 ## Summary Statistics on Suspension Coils
 **Q:** The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
-**A:** When it comes to the total summarym the current manufacturing data meets the design specification. The data from all lots averages to a variance of about 62 pounds per square inch, putting it below the requirement of 100 pounds per square inch.
+**A:** When it comes to the total summary the current manufacturing data meets the design specification. The data from all lots averages to a variance of about 62 pounds per square inch, putting it below the requirement of 100 pounds per square inch.
 
 ![PSI total summary](https://github.com/jlozano1990/MechaCar_Statistical_Analysis/blob/main/Images/PSI_total_summary.PNG)
 
@@ -27,6 +27,7 @@ However, when we look at the variances by lot, we can see that lot 3 is not meet
 
 ## T-Tests on Suspension Coils
 We did a T-Test on our the PSI of suspension coils across all lots to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch. The p-value result was 0.06028, meaning that the PSI of suspension coils across all manufacturing lots was not statistically different from the population mean of 1,500 pounds per inch.
+
 ![T-test on whole datatset](https://github.com/jlozano1990/MechaCar_Statistical_Analysis/blob/main/Images/total_T_test.PNG)
 
 We then proceeded to do a T-Test on the PSI of suspension coils but this time we organized it by manufacturing lot. For lot 1 and lot 2, the p-values were 1 and 0.6072 respectively, meanning that the PSI of suspension coils from those manufacturing lots were not statistically different from the population mean of 1,500 pounds per inch. The p-value result for lot 3 was 0.04168, meaning that the PSI of suspension coils from this manufacturing lot was statistically different from the population mean of 1,500 pounds per inch.
